@@ -21,8 +21,12 @@ Bisognerà poi stamapre un messaggio se l'utente ha azzeccato o meno.
 
 ## Palindroma
 
+#### Consegna Esercizio
+
     Chiedere all’utente di inserire una parola
     Creare una funzione per capire se la parola inserita è palindroma
+
+#### Algoritmo 
 
 1. Creare una variabile dentro la quale viene inserito l'input dell'utente.
 2. Creare una funzione.
@@ -36,12 +40,16 @@ a quella del parametro.)
 
 ## Pari e Dispari
 
+#### Consegna Esercizio
+
     Pari e Dispari
     L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
     Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
     Sommiamo i due numeri
     Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
     Dichiariamo chi ha vinto.
+
+#### Algoritmo
 
 1. Chiediamo all'utente di inserire pari o dispari tramite un prompt. Inserire il valore dell'utente all'interno di una variabile.
 2. Chiediamo all'utente di inserire un numero da 1 a 5 e lo inseriamo all'interno di una variabile.
