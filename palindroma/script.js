@@ -20,8 +20,8 @@ function isPalindrome(word){
     for (i= wordLength -1; i >= 0; i--){
         reversedWord += word[i];
     }
-    console.log(word);
-    console.log(reversedWord);
+    console.log("La parola inserita è:", word);
+    console.log("La parola al contrario è:", reversedWord);
     // Controllo se le due metà sono uguali, restituisco una stampa 
     if(word === reversedWord){
         console.log("La parola è palindroma");
