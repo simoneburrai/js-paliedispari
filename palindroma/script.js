@@ -15,19 +15,15 @@ userWord = userWord.toLowerCase();
 function isPalindrome(word){
     // variabile con lunghezza della parola
      const wordLength = word.length;
-     // variabile con metà della lunghezza della parola
-    const halfWordLength = wordLength /2;
-    //Prima metà della parola
-    const firstHalf = word.substring(0, halfWordLength);
-    // seconda metà della parola
-    const secondHalf = word.substring(wordLength, halfWordLength);
-    //seconda metà della parola, ma reversed
-    let reversedHalf = "";
-    for (i= secondHalf.length -1; i >= 0; i--){
-        reversedHalf += secondHalf[i];
+    //seconda parola, ma reversed
+    let reversedWord = "";
+    for (i= wordLength -1; i >= 0; i--){
+        reversedWord += word[i];
     }
+    console.log(word);
+    console.log(reversedWord);
     // Controllo se le due metà sono uguali, restituisco una stampa 
-    if(firstHalf === reversedHalf){
+    if(word === reversedWord){
         console.log("La parola è palindroma");
         return true;
     } else {
