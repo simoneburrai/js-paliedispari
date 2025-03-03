@@ -1,6 +1,7 @@
 // Definiamo la variabile userWord, contenente la parola dell'utente 
 let userWord = prompt("Inserire una parola, verificheremo se sia palindroma o meno");
-userWord = userWord.toLowerCase();
+userWord = userWord.toLowerCase;
+//Verifico se la parola inserita corrisponde a quella richiesta
 
 function isPalindrome(word){
     // variabile con lunghezza della parola
@@ -23,5 +24,17 @@ function isPalindrome(word){
 }
 
 // Richiamo la funzione con argomento la parola dell'utente 
-console.log(isPalindrome(userWord));
+//Aggiungo un coltrollo per verificare se la parola inserita è corretta e limito il 
+//numero di risposte a 6.
+for(i= 0; i<5; i++){
+    console.log(userWord);
+    if(userWord === "pari" || userWord === "dispari"){
+        console.log(isPalindrome(userWord));
+        break;
+    } else {
+        userWord = prompt(`Inserisci il valore corretto! Ti rimangono ${5 - i} tentativi"`);
+        userWord = userWord.toLowerCase;
+    }
+}
+
 
